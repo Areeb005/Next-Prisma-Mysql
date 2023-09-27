@@ -8,21 +8,26 @@ import axios from 'axios';
 import img1 from '@/public/Images/grupne-konstelacije.webp'
 import img2 from '@/public/Images/Individualne-konstelacije.webp'
 import img4 from '@/public/Images/Ljetni-intenziv.webp'
+import { useEffect, useState } from 'react';
 
 
 
 export default function Page2() {
 
+    const [data, setdata] = useState([])
 
-    function Call() {
-        API2()
-            .then(items => {
-                // setdata(items)
-                return items
-            })
-    }
 
-    console.log(Call());
+    useEffect(() => {
+
+        API2().then((res) => {
+
+            setdata(res)
+            console.log(res);
+        })
+
+    }, [])
+
+    // console.log(Call());
 
     return <>
 
@@ -57,13 +62,13 @@ export default function Page2() {
                 <h3 className='text-2xl'>Data:</h3>
                 <div>
                     {
-                        // ABC.map(e => {
-                        //     if (e.username) {
-                        //         return <p key={e.id}>{e.username}</p>
-                        //     } else {
-                        //         return <p key={e.id}>{e.title}</p>
-                        //     }
-                        // })
+                        data.map(e => {
+                            if (e.username) {
+                                return <p key={e.id}>{e.username}</p>
+                            } else {
+                                return <p key={e.id}>{e.title}</p>
+                            }
+                        })
                     }
                 </div>
             </div>

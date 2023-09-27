@@ -30,7 +30,7 @@ const nextConfig = {
         // when true, every image will be unoptimized
         unoptimized: false,
     },
-    output: "export"
+    // output: "export"
 }
 
 module.exports = nextConfig
