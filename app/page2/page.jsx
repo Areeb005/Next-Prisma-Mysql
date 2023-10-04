@@ -39,21 +39,21 @@ export default function Page2() {
             <div className='grid grid-cols-2'>
                 <div>
                     <div className='mt-12 mr-2'>
-                        <Image src={img1} alt='Tree Image' width={300} height={150} />
+                        <Image unoptimized src={img1} alt='Tree Image' width={300} height={150} />
                     </div>
                     <div className='mt-12 mr-2'>
-                        <Image src={img2} alt='Tree Image' width={300} height={150} />
+                        <Image unoptimized src={img2} alt='Tree Image' width={300} height={150} />
                     </div>
                 </div>
                 <div>
                     <div className='mt-12 mr-2'>
-                        <Image src={'/Images/Individualne-supervizije.webp'} alt='Tree Image' width={300} height={150} />
+                        <Image unoptimized src={'/Images/Individualne-supervizije.webp'} alt='Tree Image' width={300} height={150} />
                     </div>
                     <div className='mt-12 mr-2'>
-                        <Image src={img4} alt='Tree Image' width={300} height={150} />
+                        <Image unoptimized src={img4} alt='Tree Image' width={300} height={150} />
                     </div>
                     <div className='mt-12 mr-2'>
-                        <Image src={'/Images/Supervizijske-grupe.webp'} alt='Tree Image' width={300} height={150} />
+                        <Image unoptimized src={'/Images/Supervizijske-grupe.webp'} alt='Tree Image' width={300} height={150} />
                     </div>
                 </div>
             </div>

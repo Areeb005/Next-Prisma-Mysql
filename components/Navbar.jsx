@@ -52,7 +52,7 @@ const Header = () => {
                 <Link href="/page2" className='text-black'>
                     Page2
                 </Link>
-                <Link href="/navbars" className='text-black'>
+                <Link href="/page3" className='text-black'>
                     Page3
                 </Link>
                 <Link href="/navbars" className='text-black'>
